@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  background-color: transparent;
+  background-image: url("../imgs/background.jpg");
+  background-size: fill;
+  /* makes sure the background image fits the page */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  flex-basis: 60%;
+  flex-shrink: 1;
+  border: 8px solid black;
+  height: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00000040;
+  /* 40% black blackground */
+  padding: 40px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border-radius: 20%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+#profile-pic {
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: auto;
+  border-radius: 20%;
+}
+
+
+.links {
+  border: 8px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social {
+  flex-shrink: 1;
+  width: 8%;
+  height: auto;
+}
+
+
+p {
+  color: white;
+  font-size: 2rem;
+}
